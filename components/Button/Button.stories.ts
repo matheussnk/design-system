@@ -1,4 +1,3 @@
-import { metadata } from "./../../../barber/app/layout"
 import { Meta, StoryObj } from "@storybook/react"
 
 import Button, { ButtonProps } from "./Button"
