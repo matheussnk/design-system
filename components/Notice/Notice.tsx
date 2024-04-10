@@ -10,6 +10,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 export type NoticeProps = VariantProps<typeof noticeVariants> & {
   type: "alert" | "success" | "error";
+  children?: React.ReactNode;
   message: string;
   onClose?: () => void;
 } & React.HTMLAttributes<HTMLDivElement>;
@@ -47,7 +48,7 @@ const Notice = ({
   ...rest
 }: NoticeProps) => {
   return (
-    <Box filledBackground rounded type={type} className="" {...rest}>
+    <Box filledBackground rounded type={type} {...rest}>
       <div className="flex p-4 justify-between items-center">
         <div
           className={`flex gap-2 justify-between items-center ${noticeVariants({

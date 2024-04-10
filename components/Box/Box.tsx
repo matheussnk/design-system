@@ -7,7 +7,7 @@ export type BoxProps = {
   border?: boolean
   filledBackground?: boolean
   type: "primary" | "secoundary" | "dark" | "alert" | "success" | "error"
-  className: string
+  className?: string
 } & React.HTMLAttributes<HTMLDivElement>
 
 const boxClassMap = {

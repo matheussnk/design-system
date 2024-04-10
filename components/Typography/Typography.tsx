@@ -25,11 +25,11 @@ const textVariants = cva("text-gray-primary text-sm font-normal", {
 });
 
 export type TypographyProps = VariantProps<typeof textVariants> & {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   element?: keyof JSX.IntrinsicElements;
-  size:'xs' | 'sm' | 'md'| 'xl' | 'title1' | 'title2'| 'title3'
-  variant: "primary" | "secondary" | "tertiary"
-  defaultVariants:  "variant"| "size" 
+  size?:'xs' | 'sm' | 'md'| 'xl' | 'title1' | 'title2'| 'title3'
+  variant?: "primary" | "secondary" | "tertiary"
+  defaultVariants?:  "variant"| "size" 
 } & JSX.IntrinsicElements["p"];
 
 const Typography = ({
