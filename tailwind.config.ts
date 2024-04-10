@@ -38,11 +38,14 @@ module.exports = {
       9: 'var(--spacing-4xl) /* 56px */',
     },
     fontSize: {
-      xs: 'var(--text-xs)',
-      sm: 'var(--text-sm)',
-      md: 'var(--text-md)',
-      lg: 'var(--text-lg)',
-      xl: 'var(--text-xl)',
+      xs: "var(--text-xs)",
+      sm: "var(--text-sm)",
+      md: "var(--text-md)",
+      lg: "var(--text-lg)",
+      xl: "var(--text-xl)",
+      tmd: "var(--title-md)",
+      tlg: "var(--title-lg)",
+      txl: "var(--title-xl)",
     },
     extend: {
       colors: {

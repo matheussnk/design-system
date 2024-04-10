@@ -31,7 +31,8 @@ const Box = ({
   const classes = classNames({
     "rounded-md": rounded,
     "border border-gray-100": border,
-    "bg-dark": filledBackground,
+    "bg-dark": !filledBackground,
+    "bg-amber": filledBackground,
     [boxClassMap[type]]: type,
   })
   return (
