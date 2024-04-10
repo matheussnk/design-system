@@ -12,6 +12,7 @@ export type NoticeProps = VariantProps<typeof noticeVariants> & {
   type: "alert" | "success" | "error";
   children?: React.ReactNode;
   message: string;
+  defaultVariants?:string
   onClose?: () => void;
 } & React.HTMLAttributes<HTMLDivElement>;
 

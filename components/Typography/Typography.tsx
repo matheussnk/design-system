@@ -1,7 +1,7 @@
 import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
-const textVariants = cva("text-gray-primary text-sm font-normal", {
+const textVariants = cva("text-gray-primary-dark text-sm font-normal", {
   variants: {
     variant: {
       primary: "text-gray-primary",
