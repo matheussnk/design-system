@@ -1,0 +1,20 @@
+import { Meta, Primary, Canvas, Controls } from "@storybook/blocks";
+
+import * as Story from "./Avatar.stories.ts";
+
+<Meta of={Story} />
+
+# Avatar
+
+### Avatar
+
+<Canvas of={Story.Primary} layout="centered" />
+
+### Avatar with Image
+
+<Canvas of={Story.AvatarImage} layout="centered" />
+
+### Interactive
+
+<Primary />
+<Controls />
