@@ -1,5 +1,5 @@
-import React from "react";
-import { cva, type VariantProps } from "class-variance-authority";
+import React from "react"
+import { cva, type VariantProps } from "class-variance-authority"
 
 const textVariants = cva("text-gray-primary-dark text-sm font-normal", {
   variants: {
@@ -22,15 +22,15 @@ const textVariants = cva("text-gray-primary-dark text-sm font-normal", {
       size: "md",
     },
   },
-});
+})
 
 export type TypographyProps = VariantProps<typeof textVariants> & {
-  children?: React.ReactNode;
-  element?: keyof JSX.IntrinsicElements;
+  children?: React.ReactNode
+  element?: keyof JSX.IntrinsicElements
   size?:'xs' | 'sm' | 'md'| 'xl' | 'title1' | 'title2'| 'title3'
   variant?: "primary" | "secondary" | "tertiary"
   defaultVariants?:  "variant"| "size" 
-} & JSX.IntrinsicElements["p"];
+} & JSX.IntrinsicElements["p"]
 
 const Typography = ({
   children,
@@ -38,12 +38,12 @@ const Typography = ({
   className,
   ...rest
 }: TypographyProps) => {
-  const Element = element as any;
+  const Element = element as any
   return (
     <Element className={`${textVariants(rest)} ${className}`} {...rest}>
       {children}
     </Element>
-  );
-};
+  )
+}
 
-export default Typography;
+export default Typography

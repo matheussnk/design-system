@@ -21,4 +21,22 @@ export const AvatarImage: StoryObj<AvatarProps> = {
     size: "lg",
     image: "https://placehold.co/400x400.png",
   },
-};
+}
+
+export const AvatarSmall: StoryObj<AvatarProps> = {
+  args: {
+    size: "sm",
+  },
+}
+
+export const AvatarMedium: StoryObj<AvatarProps> = {
+  args: {
+    size: "md",
+  },
+}
+
+export const AvatarLarge: StoryObj<AvatarProps> = {
+  args: {
+    size: "lg",
+  },
+}

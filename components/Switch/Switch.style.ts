@@ -1,6 +1,6 @@
-import { cva } from "class-variance-authority";
-import classNames from "classnames";
-import { SwitchProps } from "./Switch";
+import { cva } from "class-variance-authority"
+import classNames from "classnames"
+import { SwitchProps } from "./Switch"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default ({ variant, enabled, disabled }: SwitchProps) => {
@@ -26,24 +26,24 @@ export default ({ variant, enabled, disabled }: SwitchProps) => {
         variant: "common",
       },
     }
-  );
-  const containerClasses = containerVariant({ variant });
+  )
+  const containerClasses = containerVariant({ variant })
 
   const switchClasses = classNames(
     "inline-block bg-white h-5 w-5 rounded-full transform transition-transform duration-200 ease-in-out",
     enabled ? "translate-x-[2.1rem]" : "translate-x-1"
-  );
+  )
 
   const iconClasses = classNames(
     "aria-disabled: text-font-disabled",
     { "text-success": enabled && !disabled },
     { "text-error": !enabled && !disabled },
     { "text-disabled": disabled }
-  );
+  )
 
   return {
     Icon: iconClasses,
     Switch: switchClasses,
     Container: containerClasses,
-  };
-};
+  }
+}

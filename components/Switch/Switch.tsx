@@ -1,17 +1,17 @@
 import {
   Switch as HeadlessSwitch,
   type SwitchProps as HeadlessSwitchProps,
-} from "@headlessui/react";
-import { useState } from "react";
-import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
-import useStyle from "./Switch.style";
+} from "@headlessui/react"
+import { useState } from "react"
+import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid"
+import useStyle from "./Switch.style"
 
 export type SwitchProps = {
-  defaultEnable?: boolean;
-  variant?: "common" | "contract";
-  disabled?: boolean;
-  onChange?: (enabled: boolean) => void;
-} & HeadlessSwitchProps<any>;
+  defaultEnable?: boolean
+  variant?: "common" | "contract"
+  disabled?: boolean
+  onChange?: (enabled: boolean) => void
+} & HeadlessSwitchProps<any>
 
 const Switch = ({
   defaultEnable: enabledByDefault,
@@ -20,14 +20,14 @@ const Switch = ({
   onChange,
   ...rest
 }: SwitchProps) => {
-  const [enabled, setEnabled] = useState(enabledByDefault);
-  const style = useStyle({ variant, enabled, disabled });
+  const [enabled, setEnabled] = useState(enabledByDefault)
+  const style = useStyle({ variant, enabled, disabled })
 
   const toggle = () => {
-    const newState = !enabled;
-    setEnabled(newState);
-    onChange?.(newState);
-  };
+    const newState = !enabled
+    setEnabled(newState)
+    onChange?.(newState)
+  }
 
   return (
           <HeadlessSwitch
@@ -50,7 +50,7 @@ const Switch = ({
         </span>
       )}
     </HeadlessSwitch>
-  );
-};
+  )
+}
 
-export default Switch;
+export default Switch
