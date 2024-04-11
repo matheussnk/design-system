@@ -14,7 +14,10 @@
 * {
   font-family: "Mulish", sans-serif;
 }
-
+.w-full{
+  display:flex;
+  width:100%;
+}
 @layer base {
   :root {
     /* Colors */

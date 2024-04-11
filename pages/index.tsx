@@ -1,11 +1,13 @@
-import Button from "@/components/Button/Button"
+import Switch from "@/components/Switch/Switch";
 
 const App = () => {
   return (
-    <div className="container">
-      <Button>Action</Button>
+    <div className="h-screen mx-auto my-0 w-4/5 flex justify-center">
+      <div className="w-full flex-col gap-1 justify-start">
+        <Switch />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
