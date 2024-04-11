@@ -13,8 +13,6 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
-    "@storybook/addon-mdx-gfm": "^8.0.6",
-    "@storybook/addon-onboarding": "^8.0.6",
     "@types/node": "20.2.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -23,7 +21,7 @@
     "classnames": "^2.3.2",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.3",
-    "next": "13.5.1",
+    "next": "13.4.2",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -31,7 +29,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
     "@storybook/blocks": "^7.0.12",
@@ -41,6 +39,6 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@storybook/theming": "^7.0.23",
     "eslint-plugin-storybook": "^0.6.12",
-    "storybook": "^7.6.17"
+    "storybook": "^7.0.12"
   }
 }
