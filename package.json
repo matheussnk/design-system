@@ -1,7 +1,7 @@
 {
-  "name": "design-system",
+  "name": "ds-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -40,5 +40,15 @@
     "@storybook/theming": "^7.3.1",
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.3.1"
-  }
+  },
+  "description": "Design system for student purposes based on the Alura course",
+  "main": "components/index.ts",
+  "author": "Matheus Mendonça Lima",
+  "license": "ISC",
+  "files": [
+    "styles/globals.css",
+    "tailwind.config.js",
+    "components/*",
+    "fonts/*"
+  ]
 }
