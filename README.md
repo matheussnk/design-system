@@ -124,7 +124,7 @@ export default function Home() {
 
 ## 📝 Documentation
 
-To check the documentation click [here](https://ds-design-system.vercel.app/?path=/docs/design-tokens-colors--docs)
+To check the documentation click [here](https://ds-base.vercel.app/?path=/docs/design-tokens-colors--docs)
 
 - To check the documentation under development, do
   
